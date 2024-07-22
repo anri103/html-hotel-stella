@@ -781,7 +781,8 @@ svg {
 
 .section-hero__inner .btn-lg {
     --t-btn-padding-x: 2.5rem;
-    --t-btn-padding-y: 1.0rem;
+    --t-btn-padding-y: 0.7rem;
+    --t-btn-font-size: 1rem;
 }
 
 @media (min-width: 992px) {
@@ -806,6 +807,12 @@ svg {
     .section-hero__title .title-part,
     .section-hero__subtitle .title-part {
         display: inline;
+    }
+
+    .section-hero__inner .btn-lg {
+        --t-btn-padding-x: 2.5rem;
+        --t-btn-padding-y: 1rem;
+        --t-btn-font-size: 1.25rem;
     }
 
 }
