@@ -607,7 +607,7 @@ svg {
     width: 32px;
     height: 32px;
     border-radius: 50%;
-    background-color: #495057;
+    background-color: #616060;
 }
 
 .header-address__text {
@@ -630,6 +630,21 @@ svg {
 
 .header-phone__link a {
     text-decoration: none;
+}
+
+.header-callback .btn-primary {
+    --t-btn-color: #fff9f3;
+    --t-btn-bg: #ad8276;
+    --t-btn-border-color: #ad8276;
+    --t-btn-hover-color: #fff9f3;
+    --t-btn-hover-bg: #f08467;
+    --t-btn-hover-border-color: #f08467;
+    --t-btn-active-color: #fff9f3;
+    --t-btn-active-bg: #f08467;
+    --t-btn-active-border-color: #f08467;
+    --t-btn-disabled-color: #ccc;
+    --t-btn-disabled-bg: #f08467;
+    --t-btn-disabled-border-color: #f08467;
 }
 
 @media (max-width: 768px) {
@@ -724,10 +739,12 @@ svg {
     justify-content: center;
     min-height: 500px;
     height: 60vh;
+    padding: 70px 0;
     z-index: 5;
 }
 
 .section-hero__title {
+    font-size: calc(1.75rem + 1.5vw);
     text-align: center;
     font-family: var(--t-font-title);
     color: #fff;
@@ -737,7 +754,7 @@ svg {
     text-align: center;
     color: #fff;
     font-weight: 300;
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
 }
 
 .section-hero__title .title-part,
@@ -745,10 +762,26 @@ svg {
     display: block;
 }
 
-@media (max-width: 991px) {
-    .section-hero__title {
-        font-size: calc(1.75rem + 1.5vw);
-    }
+.section-hero__inner .btn-primary {
+    --t-btn-font-weight: 500;
+    --t-btn-color: #fff;
+    --t-btn-bg: #f08467;
+    --t-btn-border-color: #f08467;
+    --t-btn-hover-color: #fff9f3;
+    --t-btn-hover-bg: #c06a52;
+    --t-btn-hover-border-color: #c06a52;
+    --t-btn-active-color: #fff9f3;
+    --t-btn-active-bg: #c06a52;
+    --t-btn-active-border-color: #c06a52;
+    --t-btn-disabled-color: #ccc;
+    --t-btn-disabled-bg: #c06a52;
+    --t-btn-disabled-border-color: #c06a52;
+    letter-spacing: 0.24px;
+}
+
+.section-hero__inner .btn-lg {
+    --t-btn-padding-x: 2.5rem;
+    --t-btn-padding-y: 1.0rem;
 }
 
 @media (min-width: 992px) {
@@ -761,14 +794,20 @@ svg {
         height: 100vh;
     }
 
+    .section-hero__title {
+        font-size: 3.5rem;
+    }
+
+    .section-hero__subtitle {
+        font-size: 1.75rem;
+        margin-bottom: 4rem;
+    }
+
     .section-hero__title .title-part,
     .section-hero__subtitle .title-part {
         display: inline;
     }
 
-    .section-hero__subtitle {
-        font-size: 1.75rem;
-    }
 }
 
 /* section-features */
