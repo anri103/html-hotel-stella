@@ -748,6 +748,7 @@ svg {
     text-align: center;
     font-family: var(--t-font-title);
     color: #fff;
+    margin-top: 70px;
 }
 
 .section-hero__subtitle {
