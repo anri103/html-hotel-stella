@@ -689,7 +689,6 @@ svg {
     background-size: cover;
     opacity: 0;
     transition: opacity 1.5s ease-in-out;
-    animation: kenburns 25s infinite alternate;
 }
 
 .swiperHero .swiper-img::after {
@@ -753,6 +752,10 @@ svg {
 }
 
 @media (min-width: 992px) {
+    .swiperHero .swiper-img {
+        animation: kenburns 25s infinite alternate;
+    }
+
     .section-hero__inner {
         min-height: 750px;
         height: 100vh;
