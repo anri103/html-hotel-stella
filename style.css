@@ -1,6 +1,6 @@
-@import url(modules/normalize.css);
-@import url(modules/swiper/swiper-bundle.min.css);
-@import url(modules/fancybox/fancybox.css);
+@import url("modules/normalize.css");
+@import url("modules/swiper/swiper-bundle.min.css");
+@import url("modules/fancybox/fancybox.css");
 
 @font-face {
     font-family: 'Flavius';
